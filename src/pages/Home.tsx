@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/Home.scss"
+import Lubos from "../assets/Lubos.png"
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
       <div className="slanted-section">
-        <p>This is a slanted section!</p>
+        <img src={Lubos} alt="Lubomír Kučera" />
+        <h1>Lubomír Kučera</h1>
       </div>
       <nav>
         <ul>
