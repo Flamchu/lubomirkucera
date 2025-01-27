@@ -1,7 +1,7 @@
 import React from "react";
 
 const Galerie: React.FC = () => {
-  return <p></p>;
+	return <p></p>;
 };
 
 export default Galerie;
