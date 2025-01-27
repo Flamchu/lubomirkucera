@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Galerie from "./pages/Galerie";
 import Contact from "./pages/Contact";
 import "./App.scss"
-import Parez from "./assets/parez.jpg"
 
 const App: React.FC = () => {
   return (
@@ -21,7 +20,6 @@ const App: React.FC = () => {
         </ul>
       </nav>
       <div className="background">
-        <img src={Parez} alt="pařez" />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
