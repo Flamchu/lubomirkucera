@@ -19,8 +19,6 @@ const App: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="background">
-      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galerie" element={<Galerie />} />

@@ -22,11 +22,15 @@ const Home: React.FC = () => {
       </div>
       <div className="my-work">
         <h1>Moje tvorba</h1>
+        <div className="flex">        
         <FullscreenImage src={image1} alt="Description of image 1" />
         <FullscreenImage src={image2} alt="Description of image 2" />
+        </div>
+        <div className="flex">        
         <FullscreenImage src={image3} alt="Description of image 3" />
         <FullscreenImage src={image4} alt="Description of image 4" />
-      </div>
+        </div>
+     </div>
     </div>
   );
 };
