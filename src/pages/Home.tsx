@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "../scss/Home.scss"
 import Lubos from "../assets/Lubos.png"
 import image1 from "../assets/wd1.webp"
@@ -31,6 +32,10 @@ const Home: React.FC = () => {
         <FullscreenImage src={image4} alt="Description of image 4" />
         </div>
      </div>
+     <div className="btn-holder">
+     <Link to="/galerie"><button className="btn">Celá Fotogalerie</button></Link>
+     </div>
+     
     </div>
   );
 };
