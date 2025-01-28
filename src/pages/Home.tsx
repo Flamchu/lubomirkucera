@@ -7,6 +7,7 @@ import image2 from "../assets/wd2.webp"
 import image3 from "../assets/wd3.webp"
 import image4 from "../assets/wd4.webp"
 import FullscreenImage  from "../components/FullscreenImage";
+import Footer from "../components/Footer";
 
 
 
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
      <div className="btn-holder">
      <Link to="/galerie"><button className="btn">Celá Fotogalerie</button></Link>
      </div>
+     <Footer/>
      
     </div>
   );
