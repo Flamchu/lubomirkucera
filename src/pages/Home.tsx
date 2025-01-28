@@ -9,22 +9,28 @@ import FullscreenImage from "../components/FullscreenImage";
 
 const Home: React.FC = () => {
 	return (
-		<div className="page-container">
-			<div className="intro">
-				<div className="intro-text">
-					<h1>Lubomír Kučera</h1>
-					<p>řezbář naivního umění</p>
+		<>
+			<div className="page-container">
+				<div className="intro">
+					<div className="intro-text">
+						<h1>Lubomír Kučera</h1>
+						<p>řezbář naivního umění</p>
+					</div>
+					<img src={Lubos} alt="Lubomír Kučera" />
 				</div>
-				<img src={Lubos} alt="Lubomír Kučera" />
+				<div className="my-work">
+					<h1>Moje tvorba</h1>
+					<div className="flex">
+						<FullscreenImage src={image1} alt="Description of image 1" />
+						<FullscreenImage src={image2} alt="Description of image 2" />
+					</div>
+					<div className="flex">
+						<FullscreenImage src={image3} alt="Description of image 3" />
+						<FullscreenImage src={image4} alt="Description of image 4" />
+					</div>
+				</div>
 			</div>
-			<div className="my-work">
-				<h1>Moje tvorba</h1>
-				<FullscreenImage src={image1} alt="Description of image 1" />
-				<FullscreenImage src={image2} alt="Description of image 2" />
-				<FullscreenImage src={image3} alt="Description of image 3" />
-				<FullscreenImage src={image4} alt="Description of image 4" />
-			</div>
-		</div>
+		</>
 	);
 };
 

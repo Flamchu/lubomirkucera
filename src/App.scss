@@ -25,11 +25,10 @@
 	}
 }
 
-.background {
+.app-container {
 	position: absolute;
 	z-index: -100;
 	width: 100%;
-	height: 5000px;
 	background-image: url(./assets/prkna.png);
 	background-repeat: repeat-y;
 	background-size: 100% auto;
