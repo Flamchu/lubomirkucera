@@ -1,0 +1,31 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+  
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 50px 10px 50px;
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__ul-holder{
+         a{color: #fff;}
+        li{
+        margin: 0 0 4px 0;
+
+        }
+    }
+
+    &__webweave a{
+        color: white;
+        text-decoration: none;
+    }
+  }
+  

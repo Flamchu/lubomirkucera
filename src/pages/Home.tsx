@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/Home.scss";
-import "../scss/components/img-wrapper.scss";
 import Lubos from "../assets/Lubos.png";
 import image1 from "../assets/wd1.webp";
 import image2 from "../assets/wd2.webp";
 import image3 from "../assets/wd3.webp";
 import image4 from "../assets/wd4.webp";
 import FullscreenImage from "../components/FullscreenImage";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
 	return (
@@ -35,6 +35,7 @@ const Home: React.FC = () => {
 					<button className="btn">Celá Fotogalerie</button>
 				</Link>
 			</div>
+			<Footer />
 		</div>
 	);
 };
