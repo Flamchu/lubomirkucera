@@ -1,37 +1,36 @@
-*{
-  overflow-x: hidden;
+* {
+	overflow-x: hidden;
 }
 
 .navbar {
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    
-    ul {
-      display: flex;
-      list-style-type: none;
+	position: absolute;
+	left: 50px;
+	top: 20px;
 
-      li {
-        margin-right: 20px;
-        
-        a {
-          color: white;
-          text-decoration-color:white ;
-          font-family: sans-serif;
-          font-weight: 500;
-          font-size: 20px;
-        }
-      }
-    }
-  }
+	ul {
+		display: flex;
+		list-style-type: none;
 
-.app-container{
-  position: absolute;
-  z-index: -100;
-  width: 100%;
-  background-image: url(./assets/prkna.png);
-  background-repeat: repeat-y;
-  background-size: 100% auto; 
-  background-position: top center;
+		li {
+			margin-right: 20px;
+
+			a {
+				color: white;
+				text-decoration-color: white;
+				font-family: sans-serif;
+				font-weight: 500;
+				font-size: 20px;
+			}
+		}
+	}
 }
- 
+
+.app-container {
+	position: absolute;
+	z-index: -100;
+	width: 100%;
+	background-image: url(./assets/prkna.png);
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	background-position: top center;
+}
