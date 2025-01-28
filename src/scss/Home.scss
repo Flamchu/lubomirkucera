@@ -35,24 +35,20 @@
 		font-size: 70px;
 	}
 
-<<<<<<< HEAD
 	img {
 		width: 40%;
 		margin: 50px auto;
 	}
-=======
-.my-work{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1{
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
-    font-size: 70px;
-  }
-
-
->>>>>>> 1e36c6b5d4ebb773a29943e268bf4fa24fdbb5a6
+	.my-work {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			text-align: center;
+			color: white;
+			font-family: sans-serif;
+			font-size: 70px;
+		}
+	}
 }
