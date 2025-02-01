@@ -1,13 +1,11 @@
-// FullscreenImage.tsx
 import React, { useState } from "react";
 
 interface FullscreenImageProps {
 	src: string;
 	alt: string;
-	wrapper: string;
 }
 
-const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt, wrapper }) => {
+const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 	const [isFullscreen, setIsFullscreen] = useState(false);
 
 	const toggleFullscreen = () => {
@@ -15,8 +13,13 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt, wrapper }) 
 	};
 
 	return (
-		<div className={wrapper}>
-			<img src={src} alt={alt} onClick={toggleFullscreen} style={{ cursor: "pointer", maxWidth: "70%", height: "auto" }} />
+		<>
+			<img 
+				src={src} 
+				alt={alt} 
+				onClick={toggleFullscreen} 
+				style={{ cursor: "pointer", maxWidth: "70%", height: "auto" }} 
+			/>
 			{isFullscreen && (
 				<div
 					style={{
@@ -33,10 +36,14 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt, wrapper }) 
 					}}
 					onClick={toggleFullscreen}
 				>
-					<img src={src} alt={alt} style={{ maxWidth: "90%", maxHeight: "90%" }} />
+					<img 
+						src={src} 
+						alt={alt} 
+						style={{ maxWidth: "90%", maxHeight: "90%" }} 
+					/>
 				</div>
 			)}
-		</div>
+		</>
 	);
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Gallery from "../components/Gallery";
-import "../scss/components/gallery.scss";
 
 const Galerie: React.FC = () => {
 	return (

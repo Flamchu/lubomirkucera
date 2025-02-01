@@ -8,7 +8,7 @@ import image3 from "../assets/images/24.jpg";
 import image4 from "../assets/images/27.jpg";
 import FullscreenImage from "../components/FullscreenImage";
 import Footer from "../components/Footer";
-
+import "../scss/components/gallery-component.scss"
 const Home: React.FC = () => {
 	return (
 		<div className="page-container">
@@ -21,14 +21,16 @@ const Home: React.FC = () => {
 			</div>
 			<div className="my-work">
 				<h1>Moje tvorba</h1>
-				<div className="flex">
-					<FullscreenImage src={image1} alt="Description of image 1" wrapper="img-wrapper" />
-					<FullscreenImage src={image2} alt="Description of image 2" wrapper="img-wrapper" />
-				</div>
-				<div className="flex">
-					<FullscreenImage src={image3} alt="Description of image 3" wrapper="img-wrapper" />
-					<FullscreenImage src={image4} alt="Description of image 4" wrapper="img-wrapper" />
-				</div>
+				<div className="gallery-flex">
+			<div className="gallery-column">
+				<FullscreenImage src={image1} alt="Description of image 1" />
+				<FullscreenImage src={image2} alt="Description of image 2" />
+			</div>
+			<div className="gallery-column">
+			<FullscreenImage src={image3} alt="Description of image 3" />
+			<FullscreenImage src={image4} alt="Description of image 4" />
+			</div>
+			</div>			
 			</div>
 			<div className="btn-holder">
 				<Link to="/galerie">
