@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import people_img from "../assets/people.png";
 
 const API_URL = "/api/counter.php";
 
@@ -13,8 +14,9 @@ const VisitorCounter = () => {
 	}, []);
 
 	return (
-		<div className="footer__ul-holder">
-			<p>Počet návštěvníků: {count ?? "Načítám..."}</p>
+		<div className="footer__visitor-counter">
+			<img src={people_img} />
+			<p>{count ?? "Načítám..."}</p>
 		</div>
 	);
 };

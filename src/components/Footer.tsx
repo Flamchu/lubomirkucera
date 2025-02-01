@@ -17,12 +17,6 @@ const Footer: React.FC = () => {
 							<li onClick={() => scrollToTopAndNavigate("/kontakt")}>Kontakt</li>
 						</ul>
 					</div>
-					<div className="footer__middle-div">
-						<VisitorCounter />
-						<div className="footer__webweave">
-							<a href="https://webweave.cz">Made by WebWeave.cz</a>
-						</div>
-					</div>
 
 					<div className="footer__ul-holder">
 						<ul>
@@ -31,7 +25,11 @@ const Footer: React.FC = () => {
 						</ul>
 					</div>
 				</div>
+				<div className="footer__webweave">
+					<a href="https://webweave.cz">Made by WebWeave.cz</a>
+				</div>
 			</div>
+			<VisitorCounter />
 		</footer>
 	);
 };

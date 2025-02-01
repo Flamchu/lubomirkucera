@@ -2,21 +2,18 @@
 	background-color: #333;
 	color: #fff;
 	font-family: sans-serif;
+	position: relative;
 
 	&__container {
 		max-width: 1200px;
 		margin: 0 auto;
 		text-align: center;
 		padding: 20px 50px 10px 50px;
+		position: relative;
 	}
 
 	&__flex {
 		display: flex;
-		justify-content: space-between;
-	}
-	&__middle-div {
-		display: flex;
-		flex-direction: column;
 		justify-content: space-between;
 	}
 
@@ -32,5 +29,22 @@
 	&__webweave a {
 		color: white;
 		text-decoration: none;
+	}
+
+	&__visitor-counter {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+		font-size: 14px;
+		color: #ddd;
+		p {
+			margin-left: 0.2rem;
+		}
+
+		img {
+			width: 20px;
+		}
 	}
 }
