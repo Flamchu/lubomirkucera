@@ -1,32 +1,18 @@
-.title {
+.gallery-intro {
 	width: 100%;
-	margin-top: 120px;
+	height: 250px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
+	background: linear-gradient(#2c2c2c, #686868);
+	color: white;
+	font-family: sans-serif;
+ 
 
-	h1 {
-		font-size: 48px;
-		font-family: sans-serif;
-		color: white;
-	}
-}
+	.intro-text {
+		margin-top: 100px;
 
-.gallery-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	gap: 16px;
-
-	.gallery-img-wrapper {
-		flex: 1 1 calc(50% - 16px);
-		display: flex;
-		justify-content: center;
-
-		img {
-			width: 60%;
-			height: auto;
-			max-width: 100%;
-			max-height: 100%;
+		h1 {
+			font-size: 64px;
 		}
 	}
 }
