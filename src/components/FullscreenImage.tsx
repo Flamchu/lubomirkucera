@@ -14,12 +14,7 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 
 	return (
 		<>
-			<img 
-				src={src} 
-				alt={alt} 
-				onClick={toggleFullscreen} 
-				style={{ cursor: "pointer", maxWidth: "70%", height: "auto" }} 
-			/>
+			<img src={src} alt={alt} onClick={toggleFullscreen} style={{ cursor: "pointer", maxWidth: "70%", height: "auto" }} />
 			{isFullscreen && (
 				<div
 					style={{
@@ -36,11 +31,7 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 					}}
 					onClick={toggleFullscreen}
 				>
-					<img 
-						src={src} 
-						alt={alt} 
-						style={{ maxWidth: "90%", maxHeight: "90%" }} 
-					/>
+					<img src={src} alt={alt} style={{ maxWidth: "90%", maxHeight: "90%" }} />
 				</div>
 			)}
 		</>

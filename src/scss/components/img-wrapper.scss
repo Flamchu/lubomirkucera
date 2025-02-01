@@ -1,11 +1,10 @@
-.img-wrapper{
-    
-    img{
-    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
-    transition: 0.3s ease;
-    &:hover{
-        scale: 1.02;
-        transition: 0.3s ease;
-}
-    }
+.img-wrapper {
+	img {
+		box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+		transition: 0.3s ease;
+		&:hover {
+			scale: 1.02;
+			transition: 0.3s ease;
+		}
+	}
 }
