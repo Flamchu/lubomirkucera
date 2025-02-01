@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/Home.scss";
 import Lubos from "../assets/Lubos.png";
-import image1 from "../assets/wd1.webp";
-import image2 from "../assets/wd2.webp";
-import image3 from "../assets/wd3.webp";
-import image4 from "../assets/wd4.webp";
+import image1 from "../assets/images/7.jpg";
+import image2 from "../assets/images/1.jpg";
+import image3 from "../assets/images/24.jpg";
+import image4 from "../assets/images/27.jpg";
 import FullscreenImage from "../components/FullscreenImage";
 import Footer from "../components/Footer";
 
