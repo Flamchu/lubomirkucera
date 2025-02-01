@@ -1,30 +1,39 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import "../scss/components/Footer.scss";
+import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
+import VisitorCounter from "./VisitorCounter";
 
 const Footer: React.FC = () => {
-  return (
-    <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__flex">
-        <div className="footer__ul-holder">
-            <ul>
-            <li><Link to="/">Domů</Link></li>
-            <li><Link to="/galerie">Celá Fotogalerie</Link></li>
-            <li><Link to="/kontakt">Kontakt</Link></li>
-            </ul>
-        </div>
-        <div className="footer__ul-holder">
-            <ul>
-                <li>+420 732 000 000</li>
-                <li>luboskucera69@seznam.cz</li>
-            </ul>
-        </div>
-        </div>
-        <div className="footer__webweave"><a href="https://webweave.cz">Made by WebWeave.cz</a></div>
-      </div>
-    </footer>
-  );
+	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
+
+	return (
+		<footer className="footer">
+			<div className="footer__container">
+				<div className="footer__flex">
+					<div className="footer__ul-holder">
+						<ul>
+							<li onClick={() => scrollToTopAndNavigate("/")}>Domů</li>
+							<li onClick={() => scrollToTopAndNavigate("/galerie")}>Celá Fotogalerie</li>
+							<li onClick={() => scrollToTopAndNavigate("/kontakt")}>Kontakt</li>
+						</ul>
+					</div>
+					<div className="footer__middle-div">
+						<VisitorCounter />
+						<div className="footer__webweave">
+							<a href="https://webweave.cz">Made by WebWeave.cz</a>
+						</div>
+					</div>
+
+					<div className="footer__ul-holder">
+						<ul>
+							<li>+420 732 000 000</li>
+							<li>luboskucera69@seznam.cz</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
 };
 
 export default Footer;

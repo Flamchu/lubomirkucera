@@ -1,7 +1,10 @@
 import React from "react";
 import Gallery from "../components/Gallery";
+import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 
 const Galerie: React.FC = () => {
+	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
+
 	return (
 		<>
 			<section className="title">
@@ -11,6 +14,12 @@ const Galerie: React.FC = () => {
 			<main>
 				<Gallery />
 			</main>
+
+			<div className="btn-holder">
+				<button className="btn" onClick={() => scrollToTopAndNavigate("/galerie")}>
+					Zpět nahoru
+				</button>
+			</div>
 		</>
 	);
 };
