@@ -78,7 +78,7 @@
 	font-size: 17px;
 	cursor: pointer;
 	font-weight: bold;
-	background: transparent;
+	background-color: white;
 	position: relative;
 	transition: all 1s;
 	overflow: hidden;
@@ -86,6 +86,8 @@
 
 .btn:hover {
 	color: white;
+	background-color: transparent;
+
 }
 
 .btn::before {
@@ -99,8 +101,10 @@
 	background-color: rgb(0, 112, 4);
 	z-index: -1;
 	transition: all 1s;
+
 }
 
 .btn:hover::before {
 	width: 160%;
+
 }
