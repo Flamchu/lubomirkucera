@@ -1,12 +1,13 @@
 .gallery-flex {
 	display: flex;
+	justify-content: center;
 }
 
 .gallery-column {
-	width: 50%;
 	display: flex;
+	width: 25%;
 	flex-direction: column;
 	img {
-		margin: 20px auto;
+		margin: 20px 0;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 	}
-}

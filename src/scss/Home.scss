@@ -67,6 +67,7 @@
 	display: flex;
 	justify-content: center;
 	margin: 40px 0;
+
 }
 
 .btn {
@@ -75,6 +76,7 @@
 	text-decoration: none;
 	border: 2px solid rgb(0, 0, 0);
 	padding: 10px 20px;
+	margin: 20px auto;
 	font-size: 17px;
 	cursor: pointer;
 	font-weight: bold;
@@ -82,8 +84,8 @@
 	position: relative;
 	transition: all 1s;
 	overflow: hidden;
+	box-shadow: rgb(38, 57, 77) 0px 2px 30px -10px;
 }
-
 .btn:hover {
 	color: white;
 	background-color: transparent;

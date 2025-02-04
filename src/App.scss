@@ -12,6 +12,7 @@
 		display: flex;
 		list-style-type: none;
 		justify-content: right;
+
 		li {
 			margin-right: 20px;
 
@@ -21,16 +22,33 @@
 				font-family: 'Courier New', Courier, monospace;
 				font-weight: 500;
 				font-size: 20px;
+				position: relative; /* Position relative for the pseudo-element */
+				overflow: hidden; /* Hide the overflow of the pseudo-element */
+			}
+
+			a::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px; /* Adjust the height of the underline */
+				background: white; /* Color of the underline */
+				transform: translateX(-100%); /* Start hidden to the left */
+				transition: transform 0.3s ease; /* Transition effect */
+			}
+
+			a:hover::after {
+				transform: translateX(0); /* Move to the original position on hover */
 			}
 		}
 	}
 }
-
 .app-container {
 	position: absolute;
 	z-index: -100;
 	width: 100%;
-	background-image: url(./assets/background.webp);
+	background-image: url(./assets/background-psd.webp);
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	background-position: top center;
