@@ -14,9 +14,9 @@ const Footer: React.FC = () => {
 					<div className="footer__ul-holder">
 						<ul>
 							<li><p className="footer__darker-text">Navigace</p></li>
-							<li onClick={() => scrollToTopAndNavigate("/")}>Domů</li>
-							<li onClick={() => scrollToTopAndNavigate("/galerie")}>Celá Fotogalerie</li>
-							<li onClick={() => scrollToTopAndNavigate("/kontakt")}>Kontakt</li>
+							<li><span className="footer__link" onClick={() => scrollToTopAndNavigate("/")}>Domů</span></li>
+							<li><span className="footer__link" onClick={() => scrollToTopAndNavigate("/galerie")}>Celá Fotogalerie</span></li>
+							<li><span className="footer__link" onClick={() => scrollToTopAndNavigate("/kontakt")}>Kontakt</span></li>
 						</ul>
 					</div>
 

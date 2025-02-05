@@ -7,14 +7,51 @@ interface FullscreenImageProps {
 
 const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 	const [isFullscreen, setIsFullscreen] = useState(false);
+	const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
 	const toggleFullscreen = () => {
 		setIsFullscreen(!isFullscreen);
 	};
 
+	const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
+		const { clientX, clientY, currentTarget } = e;
+		const { left, top, width, height } = currentTarget.getBoundingClientRect();
+		const centerX = left + width / 2;
+		const centerY = top + height / 2;
+
+		const deltaX = clientX - centerX;
+		const deltaY = clientY - centerY;
+
+		const tiltX = (deltaY / (height / 2)) * 2; // Adjust the multiplier for tilt strength
+		const tiltY = (deltaX / (width / 2)) * -2; // Adjust the multiplier for tilt strength
+
+		setTilt({ x: tiltX, y: tiltY });
+	};
+
+	const handleMouseLeave = () => {
+		setTilt({ x: 0, y: 0 }); // Reset tilt when mouse leaves
+	};
+
+	const imageStyle = {
+		cursor: "pointer",
+		maxWidth: "70%",
+		height: "auto",
+		transition: "transform 0.1s ease", // Faster transition for a more responsive feel
+		transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+	};
+
 	return (
 		<>
-			<img src={src} alt={alt} onClick={toggleFullscreen} style={{ cursor: "pointer", maxWidth: "70%", height: "auto" }} />
+			<div style={{ perspective: "1000px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+				<img
+					src={src}
+					alt={alt}
+					onClick={toggleFullscreen}
+					style={imageStyle}
+					onMouseMove={handleMouseMove}
+					onMouseLeave={handleMouseLeave}
+				/>
+			</div>
 			{isFullscreen && (
 				<div
 					style={{

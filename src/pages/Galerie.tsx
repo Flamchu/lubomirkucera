@@ -4,12 +4,18 @@ import "../scss/components/backToTopButton.scss";
 import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 import "../scss/components/gallery.scss";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet-async";
+
 
 const Galerie: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
 
 	return (
 		<>
+		<Helmet>
+			<title>Galerie - Lubomír Kučera</title>
+			<meta name="description" content="Get in touch with us via phone, email, or visit our office." />
+		</Helmet>
 			<div className="gallery-intro">
 				<div className="intro-text">
 				<h2><span>Galerie</span></h2>

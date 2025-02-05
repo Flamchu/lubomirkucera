@@ -5,6 +5,7 @@
 
 .gallery-column {
 	display: flex;
+	align-content: center;
 	width: 25%;
 	flex-direction: column;
 	img {

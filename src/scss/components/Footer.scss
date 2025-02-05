@@ -3,8 +3,10 @@
 	color: #fff;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	position: relative;
+	margin: 10vh auto 0;
+
+	// rounded footer for now but not sure if we'll keep it
 	width: 90vw;
-	margin: auto;
 	border-radius: 50px 50px 0 0;
 
 	&__container {
@@ -25,19 +27,38 @@
 	&__ul-holder {
 		text-align: left;
 		width: max-content;
-		ul{
+		ul {
 			padding: 0;
 		}
-		a {
+		a, .footer__link {
 			color: #fff;
 			text-decoration: none;
+			position: relative; /* Position relative for the pseudo-element */
+			overflow: hidden; /* Hide the overflow of the pseudo-element */
+			cursor: pointer;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px; /* Adjust the height of the underline */
+				background: rgb(255, 255, 255); /* Color of the underline */
+				transform: translateX(-100%); /* Start hidden to the left */
+				transition: transform 0.3s ease; /* Transition effect */
+			}
+
+			&:hover::after {
+				transform: translateX(0); /* Move to the original position on hover */
+			}
 		}
 		li {
 			margin: 0 0 4px 0;
 		}
 	}
 
-	&__bottom{
+	&__bottom {
 		display: flex;
 		justify-content: space-between;
 		margin: 40px auto 5px;
@@ -48,9 +69,7 @@
 		text-decoration: none;
 	}
 
-	
-
-	&__darker-text-bottom{
+	&__darker-text-bottom {
 		text-align: left;
 		color: #616161;
 	}
@@ -69,12 +88,11 @@
 		}
 	}
 
-	&__darker-text{
+	&__darker-text {
 		color: #616161;
 	}
 
-	&__copyright{
+	&__copyright {
 		color: #1d1d1d;
-
 	}
 }
