@@ -11,19 +11,22 @@
 
 .intro {
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 	display: flex;
-	justify-content: space-evenly;
-	background: linear-gradient(#2c2c2c, #686868);
-	color: white;
-	font-family: sans-serif;
+	background: #ecdcd2;
+	color: black;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	img {
-		height: 500px;
+		height: 90vh;
+		position: absolute;
+		right: 0;
+		top: 10vh;
 		filter: drop-shadow(0 10px 10px rgb(110, 110, 110));
 	}
 
 	.intro-text {
-		margin-top: 200px;
+		margin-top: 40vh;
+		margin-left: 20vw;
 
 		h1 {
 			font-size: 64px;

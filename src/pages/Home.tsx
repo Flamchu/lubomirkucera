@@ -1,7 +1,7 @@
 import React from "react";
 import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 import "../scss/Home.scss";
-import Lubos from "../assets/Lubos.png";
+import Lubos from "../assets/lubos-kruh.webp";
 import image1 from "../assets/images/7.jpg";
 import image2 from "../assets/images/1.jpg";
 import image3 from "../assets/images/24.jpg";
