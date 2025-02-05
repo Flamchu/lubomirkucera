@@ -23,7 +23,7 @@ const Home: React.FC = () => {
 			<div className="intro">
 				<div className="intro-text">
 				<h2><span>Lubomír Kučera</span></h2>
-					<p>řezbář naivního umění</p>
+					<p id="courier">řezbář naivního umění</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae volutpat libero. Fusce pellentesque in urna pellentesque eleifend. Mauris rhoncus eleifend nisl quis efficitur. Sed in mi et nisi blandit pellentesque vitae et orci. Ut ex tortor, gravida nec dui et, dignissim tempus risus. Nullam sit amet libero ex.</p>
 				</div>
 				<img src={Lubos} alt="Lubomír Kučera" />

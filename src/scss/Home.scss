@@ -58,9 +58,13 @@
 			overflow:visible;
 		  }
 		p {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 			margin: 20px 30px;
 			font-size: 28px;
 			max-width: 40vw;
+		}
+		#courier{
+			font-family: 'Courier New', Courier, monospace;
 		}
 	}
 }
