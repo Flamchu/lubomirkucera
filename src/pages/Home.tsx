@@ -10,6 +10,8 @@ import FullscreenImage from "../components/FullscreenImage";
 import Footer from "../components/Footer";
 import "../scss/components/gallery-component.scss";
 import ScrollDown from "../components/ScrollDown";
+import image22 from "../assets/images/22.jpg";
+
 
 
 const Home: React.FC = () => {
@@ -35,6 +37,7 @@ const Home: React.FC = () => {
 					<div className="gallery-column">
 						<FullscreenImage src={image3} alt="Description of image 3" />
 						<FullscreenImage src={image4} alt="Description of image 4" />
+						<FullscreenImage src={image22} alt="Description of image 22" />
 					</div>
 				</div>
 			</div>
