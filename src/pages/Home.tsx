@@ -9,14 +9,18 @@ import image4 from "../assets/images/27.jpg";
 import FullscreenImage from "../components/FullscreenImage";
 import Footer from "../components/Footer";
 import "../scss/components/gallery-component.scss";
+import ScrollDown from "../components/ScrollDown";
+
+
 const Home: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
 
 	return (
 		<div className="page-container">
+			<ScrollDown/>
 			<div className="intro">
 				<div className="intro-text">
-					<h1>Lubomír Kučera</h1>
+				<h2><span>Lubomír Kučera</span></h2>
 					<p>řezbář naivního umění</p>
 				</div>
 				<img src={Lubos} alt="Lubomír Kučera" />

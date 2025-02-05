@@ -12,10 +12,9 @@ const Contact: React.FC = () => {
             </Helmet>
 			<div className="gallery-intro">
 				<div className="intro-text">
-					<h1>Kontakt</h1>
+                <h2><span>Kontakt</span></h2>
 				</div>
 			</div>
-			
             <div className="contact-container">
                 <p>Líbí se Vám moje tvorba? Neváhejte mě kontaktovat!</p>
 
@@ -34,6 +33,7 @@ const Contact: React.FC = () => {
                         <span>Petrkov 5, 580 01 Havlíčkův Brod</span>
                     </div>
                 </div>
+
             </div>
 			<Footer />
 		</>

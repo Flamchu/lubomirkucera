@@ -12,7 +12,7 @@ const Galerie: React.FC = () => {
 		<>
 			<div className="gallery-intro">
 				<div className="intro-text">
-					<h1>Galerie</h1>
+				<h2><span>Galerie</span></h2>
 				</div>
 			</div>
 
