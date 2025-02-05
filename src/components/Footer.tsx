@@ -5,6 +5,7 @@ import VisitorCounter from "./VisitorCounter";
 
 const Footer: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
+	const currentYear = new Date().getFullYear(); // Get the current year
 
 	return (
 		<footer className="footer">
@@ -12,6 +13,7 @@ const Footer: React.FC = () => {
 				<div className="footer__flex">
 					<div className="footer__ul-holder">
 						<ul>
+							<li><p className="footer__darker-text">Navigace</p></li>
 							<li onClick={() => scrollToTopAndNavigate("/")}>Domů</li>
 							<li onClick={() => scrollToTopAndNavigate("/galerie")}>Celá Fotogalerie</li>
 							<li onClick={() => scrollToTopAndNavigate("/kontakt")}>Kontakt</li>
@@ -20,16 +22,30 @@ const Footer: React.FC = () => {
 
 					<div className="footer__ul-holder">
 						<ul>
-							<li>+420 732 000 000</li>
-							<li>luboskucera69@seznam.cz</li>
+							<li><p className="footer__darker-text">Kontakt</p></li>
+							<li><a href="tel:+420732650305">+420 732 650 305</a></li>
+							<li><a href="mailto:luboskucera69@seznam.cz">luboskucera69@seznam.cz</a></li>
+							<li><span>Petrkov 5, 580 01 Havlíčkův Brod</span></li>
 						</ul>
 					</div>
 				</div>
-				<div className="footer__webweave">
-					<a href="https://webweave.cz">Made by WebWeave.cz</a>
+				<div className="footer__bottom">
+					<div className="footer__ul-holder">
+						<ul>
+							<li><p className="footer__darker-text-bottom">Vytvořil:</p></li>
+							<li><a href="https://webweave.cz">WebWeave.cz</a></li>
+						</ul>
+					</div>
+					<div className="footer__ul-holder">
+						<ul>
+							<li><p className="footer__copyright">Copyright</p></li>
+							<p>&copy; {currentYear} Lubomír Kučera</p>
+						</ul>
+					</div>
+					
+					<VisitorCounter />
 				</div>
 			</div>
-			<VisitorCounter />
 		</footer>
 	);
 };

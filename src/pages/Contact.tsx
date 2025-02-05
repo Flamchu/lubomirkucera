@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
                 <div className="contact-details">
                     <div className="contact-item">
                         <strong>Telefon:</strong>
-                        <a href="tel:+420732650305">732 650 305</a>
+                        <a href="tel:+420732650305">+420 732 650 305</a>
 
                     </div>
                     <div className="contact-item">
