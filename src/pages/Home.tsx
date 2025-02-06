@@ -12,11 +12,13 @@ import "../scss/components/gallery-component.scss";
 import ScrollDown from "../components/ScrollDown";
 import image22 from "../assets/images/22.jpg";
 
+
 const Home: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
 
 	return (
 		<div className="page-container">
+			
 			<ScrollDown />
 			<div className="intro">
 				<div className="intro-text">
