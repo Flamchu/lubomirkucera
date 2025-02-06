@@ -39,3 +39,23 @@
 		}
 	}
 }
+
+.btn {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	img {
+		margin-top: 2px;
+		width: auto;
+		height: 21px;
+	}
+
+	#next {
+		margin-left: 10px;
+	}
+
+	#previous {
+		margin-right: 10px;
+	}
+}
