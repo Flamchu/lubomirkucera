@@ -16,7 +16,9 @@ const App: React.FC = () => {
 				<meta name="description" content="This is a global description for my website." />
 			</Helmet>
 			<div className="app-container">
+				<div className="susenky">
 				<CookieConsent />
+				</div>
 				<Navbar />
 				<div className="background"></div>
 

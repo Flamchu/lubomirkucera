@@ -1,6 +1,7 @@
 .cookie-consent {
-	position: fixed;
-	bottom: 1rem;
+	min-width: 40vw;
+	max-width: 85vw;
+	margin: auto;
 	background-color: white;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	border-radius: 1rem;
@@ -10,8 +11,7 @@
 	z-index: 50;
 
 	@media (min-width: 768px) {
-		left: auto;
-		right: 1rem;
+		
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
