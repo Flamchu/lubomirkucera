@@ -1,7 +1,7 @@
 .footer {
-	background: #1d1d1d;	
+	background: #1d1d1d;
 	color: #fff;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	position: relative;
 	margin: 10vh auto 0;
 
@@ -30,7 +30,8 @@
 		ul {
 			padding: 0;
 		}
-		a, .footer__link {
+		a,
+		.footer__link {
 			color: #fff;
 			text-decoration: none;
 			position: relative; /* Position relative for the pseudo-element */
@@ -38,7 +39,7 @@
 			cursor: pointer;
 
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				left: 0;
 				bottom: 0;

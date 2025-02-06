@@ -4,18 +4,31 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Headers: Content-Type");
 
-// Secure file storage
-$file = __DIR__ . "/counter.txt";
+$count_file = __DIR__ . "/counter.txt";
+$ip_file = __DIR__ . "/ips.txt";
 
-if (!file_exists($file)) {
-    file_put_contents($file, "0");
+if (!file_exists($count_file)) {
+    file_put_contents($count_file, "0");
 }
 
-// Read and increment counter
-$count = (int) file_get_contents($file);
-$count++;
-file_put_contents($file, $count);
+if (!file_exists($ip_file)) {
+    file_put_contents($ip_file, "");
+}
 
-// Return count as JSON
+$ip_address = $_SERVER['REMOTE_ADDR'];
+
+
+$stored_ips = file($ip_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+if (!in_array($ip_address, $stored_ips)) {
+    $count = (int) file_get_contents($count_file);
+    $count++;
+    file_put_contents($count_file, $count);
+
+    file_put_contents($ip_file, $ip_address . PHP_EOL, FILE_APPEND);
+} else {
+    $count = (int) file_get_contents($count_file);
+}
+
 echo json_encode(["count" => $count]);
 ?>

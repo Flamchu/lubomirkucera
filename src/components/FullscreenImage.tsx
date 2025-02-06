@@ -43,14 +43,7 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 	return (
 		<>
 			<div style={{ perspective: "1000px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-				<img
-					src={src}
-					alt={alt}
-					onClick={toggleFullscreen}
-					style={imageStyle}
-					onMouseMove={handleMouseMove}
-					onMouseLeave={handleMouseLeave}
-				/>
+				<img src={src} alt={alt} onClick={toggleFullscreen} style={imageStyle} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} />
 			</div>
 			{isFullscreen && (
 				<div

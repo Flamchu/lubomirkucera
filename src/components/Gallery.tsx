@@ -60,7 +60,6 @@ const Gallery: React.FC = () => {
 					<FullscreenImage src={image19} alt="Description of image 19" />
 					<FullscreenImage src={image20} alt="Description of image 20" />
 					<FullscreenImage src={image21} alt="Description of image 21" />
-					
 				</div>
 				<div className="gallery-column">
 					<FullscreenImage src={image22} alt="Description of image 22" />
@@ -74,7 +73,6 @@ const Gallery: React.FC = () => {
 					<FullscreenImage src={image30} alt="Description of image 30" />
 					<FullscreenImage src={image31} alt="Description of image 31" />
 					<FullscreenImage src={image11} alt="Description of image 11" />
-
 				</div>
 			</div>
 		</div>

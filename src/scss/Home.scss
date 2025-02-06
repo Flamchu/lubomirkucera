@@ -15,7 +15,7 @@
 	display: flex;
 	background: #ecdcd2;
 	color: black;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	img {
 		height: 90vh;
 		position: absolute;
@@ -30,46 +30,42 @@
 
 		h2 {
 			--a: -45deg; /* control the angle */
-			--t: .12em; /* thickness of the underline */ 
+			--t: 0.12em; /* thickness of the underline */
 			color: #000000;
-		  }
-		  
-		  h2 span {
-			--_s: calc(var(--t)*cos(var(--a)));
-			background:
-			  linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
-			  bottom/var(--i,90%) var(--t) no-repeat;
-			padding: 0 .25em calc(var(--t) + .1em);
+		}
+
+		h2 span {
+			--_s: calc(var(--t) * cos(var(--a)));
+			background: linear-gradient(var(--a), #0000 var(--_s), currentColor 0 calc(100% - var(--_s)), #0000 0) bottom/var(--i, 90%) var(--t) no-repeat;
+			padding: 0 0.25em calc(var(--t) + 0.1em);
 			-webkit-box-decoration-break: clone;
-					box-decoration-break: clone;
-			transition: .3s;
+			box-decoration-break: clone;
+			transition: 0.3s;
 			cursor: pointer;
-		  }
-		  h2:hover span {
+		}
+		h2:hover span {
 			--i: 100%;
-		  }
-		  
-		  h2 {
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+
+		h2 {
+			font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 			font-size: 4rem;
 			font-weight: bold;
 			line-height: 1.5;
 			text-transform: capitalize;
-			overflow:visible;
-		  }
+			overflow: visible;
+		}
 		p {
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 			margin: 20px 30px;
 			font-size: 28px;
 			max-width: 40vw;
 		}
-		#courier{
-			font-family: 'Courier New', Courier, monospace;
+		#courier {
+			font-family: "Courier New", Courier, monospace;
 		}
 	}
 }
-
-
 
 .my-work {
 	width: 100%;
@@ -78,35 +74,33 @@
 	align-items: center;
 	h2 {
 		--a: -45deg; /* control the angle */
-		--t: .12em; /* thickness of the underline */ 
+		--t: 0.12em; /* thickness of the underline */
 		color: #000000;
-	  }
-	  
-	  h2 span {
-		--_s: calc(var(--t)*cos(var(--a)));
-		background:
-		  linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
-		  bottom/var(--i,90%) var(--t) no-repeat;
-		padding: 0 .25em calc(var(--t) + .1em);
+	}
+
+	h2 span {
+		--_s: calc(var(--t) * cos(var(--a)));
+		background: linear-gradient(var(--a), #0000 var(--_s), currentColor 0 calc(100% - var(--_s)), #0000 0) bottom/var(--i, 90%) var(--t) no-repeat;
+		padding: 0 0.25em calc(var(--t) + 0.1em);
 		-webkit-box-decoration-break: clone;
-				box-decoration-break: clone;
-		transition: .3s;
+		box-decoration-break: clone;
+		transition: 0.3s;
 		cursor: pointer;
-	  }
-	  h2:hover span {
+	}
+	h2:hover span {
 		--i: 100%;
-	  }
-	  
-	  h2 {
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+	h2 {
+		font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 		font-size: 8rem;
 		color: white;
 		margin: 10vh auto 12vh;
 		font-weight: bold;
 		line-height: 1.5;
 		text-transform: capitalize;
-		overflow:visible;
-		text-shadow: 5px 5px 0px rgba(0,0,0,0.49);	  
+		overflow: visible;
+		text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.49);
 	}
 
 	img {
@@ -130,7 +124,6 @@
 	display: flex;
 	justify-content: center;
 	margin: 40px 0;
-
 }
 
 .btn {
@@ -152,7 +145,6 @@
 .btn:hover {
 	color: white;
 	background-color: transparent;
-
 }
 
 .btn::before {
@@ -166,10 +158,8 @@
 	background-color: rgb(0, 112, 4);
 	z-index: -1;
 	transition: all 1s;
-
 }
 
 .btn:hover::before {
 	width: 160%;
-
 }

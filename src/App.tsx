@@ -10,10 +10,10 @@ import Navbar from "./components/Navbar";
 const App: React.FC = () => {
 	return (
 		<>
-		<Helmet>
-                <title>Lubomír Kučera</title>
-                <meta name="description" content="This is a global description for my website." />
-            </Helmet>
+			<Helmet>
+				<title>Lubomír Kučera</title>
+				<meta name="description" content="This is a global description for my website." />
+			</Helmet>
 			<div className="app-container">
 				<Navbar />
 				<div className="background"></div>

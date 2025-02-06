@@ -12,24 +12,26 @@ import "../scss/components/gallery-component.scss";
 import ScrollDown from "../components/ScrollDown";
 import image22 from "../assets/images/22.jpg";
 
-
-
 const Home: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
 
 	return (
 		<div className="page-container">
-			<ScrollDown/>
+			<ScrollDown />
 			<div className="intro">
 				<div className="intro-text">
-				<h2><span>Lubomír Kučera</span></h2>
+					<h2>
+						<span>Lubomír Kučera</span>
+					</h2>
 					<p id="courier">řezbář naivního umění</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae volutpat libero. Fusce pellentesque in urna pellentesque eleifend. Mauris rhoncus eleifend nisl quis efficitur. Sed in mi et nisi blandit pellentesque vitae et orci. Ut ex tortor, gravida nec dui et, dignissim tempus risus. Nullam sit amet libero ex.</p>
 				</div>
 				<img src={Lubos} alt="Lubomír Kučera" />
 			</div>
 			<div className="my-work">
-			<h2><span>Moje Tvorba</span></h2>
+				<h2>
+					<span>Moje Tvorba</span>
+				</h2>
 				<div className="gallery-flex">
 					<div className="gallery-column">
 						<FullscreenImage src={image1} alt="Description of image 1" />

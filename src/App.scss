@@ -19,7 +19,7 @@
 			a {
 				color: black;
 				text-decoration: none;
-				font-family: 'Courier New', Courier, monospace;
+				font-family: "Courier New", Courier, monospace;
 				font-weight: 500;
 				font-size: 20px;
 				position: relative; /* Position relative for the pseudo-element */
@@ -27,7 +27,7 @@
 			}
 
 			a::after {
-				content: '';
+				content: "";
 				position: absolute;
 				left: 0;
 				bottom: 0;
