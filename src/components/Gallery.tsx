@@ -32,12 +32,8 @@ import image28 from "../assets/images/28.jpg";
 import image29 from "../assets/images/29.jpg";
 import image30 from "../assets/images/30.jpg";
 import image31 from "../assets/images/31.jpg";
-import previous from "../assets/previous.png";
-import next from "../assets/next.png";
-import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 
 const Gallery: React.FC = () => {
-	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
 	return (
 		<div className="gallery">
 			<div className="gallery-flex">
@@ -77,19 +73,6 @@ const Gallery: React.FC = () => {
 					<FullscreenImage src={image30} alt="Description of image 30" />
 					<FullscreenImage src={image31} alt="Description of image 31" />
 					<FullscreenImage src={image11} alt="Description of image 11" />
-				</div>
-			</div>
-			<div className="buttons-wrapper">
-				<div className="gallery-buttons">
-					<button className="button home" onClick={() => scrollToTopAndNavigate("/")}>
-						<img id="previous" src={previous} />
-						Home
-					</button>
-
-					<button className="button contact" onClick={() => scrollToTopAndNavigate("/kontakt")}>
-						Contact
-						<img id="next" src={next} />
-					</button>
 				</div>
 			</div>
 		</div>

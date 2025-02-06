@@ -5,6 +5,8 @@ import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 import "../scss/components/gallery.scss";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
+import previous from "../assets/previous.png";
+import next from "../assets/next.png";
 
 const Galerie: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
@@ -33,11 +35,13 @@ const Galerie: React.FC = () => {
 				</svg>
 			</button>
 			<div className="btn-holder">
-			<button className="btn" onClick={() => scrollToTopAndNavigate("/galerie")}>
+				<button className="btn" onClick={() => scrollToTopAndNavigate("/")}>
+					<img id="previous" src={previous} />
 					Domů
 				</button>
 				<button className="btn" onClick={() => scrollToTopAndNavigate("/galerie")}>
 					Kontakt
+					<img id="next" src={next} />
 				</button>
 			</div>
 			<Footer />
