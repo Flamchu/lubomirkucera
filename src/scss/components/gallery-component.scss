@@ -13,3 +13,36 @@
 		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	}
 }
+
+.gallery-column-tablet {
+	display: flex;
+	align-content: center;
+	width: 35%;
+	flex-direction: column;
+	img {
+		margin: 20px 0;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.gallery-column-tablet{
+		display: none;
+	}
+  }
+
+@media only screen and (max-width: 1000px) {
+	.gallery-column{
+		display: none;
+	}
+  }
+
+  @media only screen and (max-width: 600px) {
+	.gallery-flex{
+		flex-direction: column;
+		align-items: center;
+		.gallery-column-tablet{
+			width: 80%;
+		}
+	}
+  }
