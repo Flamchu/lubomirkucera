@@ -39,7 +39,7 @@ const Galerie: React.FC = () => {
 					<img id="previous" src={previous} />
 					Domů
 				</button>
-				<button className="btn" onClick={() => scrollToTopAndNavigate("/galerie")}>
+				<button className="btn" onClick={() => scrollToTopAndNavigate("/kontakt")}>
 					Kontakt
 					<img id="next" src={next} />
 				</button>
