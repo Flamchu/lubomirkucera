@@ -2,11 +2,12 @@
 	min-width: 40vw;
 	max-width: 85vw;
 	margin: auto;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+	color: white;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	border-radius: 1rem;
 	padding: 1rem;
-	border: 1px solid #d1d5db; // border-gray-300
+	border: 1px solid #000000; // border-gray-300
 	display: flex;
 	z-index: 50;
 
@@ -20,7 +21,7 @@
 
 	&__text {
 		font-size: 0.875rem; // text-sm
-		color: #4b5563; // text-gray-700
+		color: #000000; // text-gray-700
 	}
 
 	&__buttons {
@@ -34,9 +35,9 @@
 		border-radius: 0.5rem; // rounded-lg
 
 		&--decline {
-			background-color: #e5e7eb; // bg-gray-200
+			background-color: #ff0000ae; // bg-gray-200
 			&:hover {
-				background-color: #d1d5db; // hover:bg-gray-300
+				background-color: #ff0000; // hover:bg-gray-300
 			}
 		}
 

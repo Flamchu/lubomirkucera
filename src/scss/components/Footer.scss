@@ -97,3 +97,30 @@
 		color: #1d1d1d;
 	}
 }
+
+
+@media only screen and (max-width: 550px) {
+	.footer{
+		width: 100vw;
+		border-radius: 0;
+
+		&__container{
+			padding: 4vh 5vw;
+		}
+
+		&__flex{
+			display: block;
+		}
+
+		&__bottom{
+			display: block;
+		}
+
+		&__visitor-counter{
+			margin-top: 2rem;
+		}
+	}
+
+
+	
+  }

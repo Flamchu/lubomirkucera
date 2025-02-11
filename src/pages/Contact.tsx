@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
 				</div>
 			</div>
 			<div className="divider"></div>
-			<div className="contact-container">
+			<div className="contact-container" id="Cont2">
 			<img src={image17} alt="Obrázek" />
 			</div>
 			</div>

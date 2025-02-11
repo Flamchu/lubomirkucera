@@ -17,20 +17,19 @@
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 	h1{
-		font-size: 4rem;
+		font-size: 4vw;
 		font-weight: bold;
 	}
 
 	p{
+		font-size: 1rem;
 		font-family: 'Courier New', Courier, monospace;
 		border-bottom: 1px dashed gray;
 		padding-bottom: 1rem;
 		margin-bottom: 1rem;
 	}
 
-	img{
-		max-width: 80%;
-	}
+	
 	 }
 
 	 .contact-details{
@@ -48,3 +47,48 @@
 			}
 		}
 	 }
+
+	 @media only screen and (max-width: 1000px) {
+		#Cont2{
+			display: none;
+		}
+
+		.divider{
+			display: none;
+		}
+
+		.contact-container{
+			width: auto;
+		}
+		
+	  }
+	
+	  @media only screen and (max-width: 750px) {
+
+		.contact-container{
+			padding: 2rem;
+			h1{
+				font-size: 2rem;
+				
+			}
+		
+			p{
+				font-size: 1rem;
+			}
+		}		
+		.contact-details{
+			.contact-item{
+				
+	
+				a{
+					font-size: 1em;
+				}
+	
+				img{
+					height: 1.5em;
+					margin-right: 1rem;
+				}
+			}
+		 }
+		
+	  }
