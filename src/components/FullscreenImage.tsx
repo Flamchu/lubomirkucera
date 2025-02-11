@@ -34,7 +34,6 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 
 	const imageStyle = {
 		cursor: "pointer",
-		maxWidth: "70%",
 		height: "auto",
 		transition: "transform 0.1s ease", // Faster transition for a more responsive feel
 		transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
