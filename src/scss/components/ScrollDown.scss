@@ -1,22 +1,27 @@
 .scrolldown {
-	--color: red;
-	--sizeX: 30px;
-	--sizeY: 50px;
-	position: relative;
-	width: var(--sizeX);
-	height: var(--sizeY);
-	margin-left: calc(var(--sizeX) / 2);
-	border: calc(var(--sizeX) / 10) solid var(--color);
-	border-radius: 50px;
-	box-sizing: border-box;
-	margin-bottom: 16px;
-	position: absolute;
-	top: 90vh;
-	left: 50%;
-	overflow: visible;
-	cursor: pointer;
-}
+    // Custom properties for color and size
+    --color: red;
+    --sizeX: 30px;
+    --sizeY: 50px;
 
+    // Positioning and sizing
+    position: absolute; // Changed to absolute for centering
+    width: var(--sizeX);
+    height: var(--sizeY);
+    top: 90vh;          // Position from the top of the viewport
+    left: 50%;          // Center horizontally
+    margin-left: calc(var(--sizeX) / -2); // Centering adjustment
+
+    // Border and appearance
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px; // Rounded corners
+    box-sizing: border-box; // Include padding and border in element's total width and height
+
+    // Additional styles
+    margin-bottom: 16px; // Space below the element
+    overflow: visible;    // Allow overflow
+    cursor: pointer;      // Change cursor to pointer on hover
+}
 .scrolldown::before {
 	content: "";
 	position: absolute;

@@ -79,13 +79,25 @@
 	h2 {
 		--a: -45deg;
 		--t: 0.12em;
-		color: #000000;
+		color: #ffffff;
 		font-size: 2.5rem;
-		margin: 5vh 0;
 		font-weight: bold;
+		line-height: 1.2;
 		text-transform: capitalize;
-		text-align: center;
-		text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.49);
+		overflow: visible;
+	}
+
+	h2 span {
+		--_s: calc(var(--t) * cos(var(--a)));
+		background: linear-gradient(var(--a), #0000 var(--_s), currentColor 0 calc(100% - var(--_s)), #0000 0) bottom/var(--i, 90%) var(--t) no-repeat;
+		padding: 0 0.25em calc(var(--t) + 0.1em);
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	h2:hover span {
+		--i: 100%;
 	}
 
 	.gallery-flex {
@@ -93,6 +105,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 20px;
+		margin-top: 10vh;
 
 		.gallery-column-home {
 			display: flex;
@@ -155,7 +168,9 @@
 }
 
 
+// Media Queries
 
+// For screens wider than 1024px
 @media (min-width: 1024px) {
 	.intro {
 		.intro-text {
@@ -193,6 +208,7 @@
 	}
 }
 
+// For screens wider than 768px
 @media (min-width: 768px) {
 	.intro {
 		flex-direction: row;
@@ -239,9 +255,11 @@
 	}
 }
 
-@media (max-width: 480px) {
+// For screens narrower than 480px
+@media (max-width: 700px) {
 	.intro .intro-text h2 {
 		font-size: 2rem;
+		margin-top: 20vh;
 	}
 
 	.my-work h2 {
@@ -254,10 +272,10 @@
 	}
 }
 
+// For screens between 768px and 1300px
 @media (min-width: 768px) and (max-width: 1300px) {
 	.intro {
-		flex-direction: column;
-		align-items: center;
+	
 
 		img {
 			position: relative;
@@ -269,7 +287,7 @@
 		}
 
 		.intro-text {
-			margin: 20px;
+			margin: auto;
 			text-align: center;
 
 			h2 {
@@ -281,5 +299,12 @@
 				max-width: 70vw;
 			}
 		}
+	}
+}
+
+// For screens narrower than 1300px
+@media (max-width: 1300px) {
+	.intro img {
+		display: none;
 	}
 }
