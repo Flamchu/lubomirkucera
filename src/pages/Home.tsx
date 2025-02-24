@@ -24,7 +24,8 @@ const Home: React.FC = () => {
 						<span>Lubomír Kučera</span>
 					</h2>
 					<p id="courier">řezbář naivního umění</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae volutpat libero. Fusce pellentesque in urna pellentesque eleifend. Mauris rhoncus eleifend nisl quis efficitur. Sed in mi et nisi blandit pellentesque vitae et orci. Ut ex tortor, gravida nec dui et, dignissim tempus risus. Nullam sit amet libero ex.</p>
+					<p>„prasklina ve dřevě je jako vráska na čele“ <br /><br />Milí přátelé, jmenuji se Lubomír Kučera. Rád bych Vás přivítal na mém webu, kde bych Vám rád ukázal činnost která mne plně pohltila. Je to činnost, která voní dřevem, benzínem a olejem. Záliba, která se věnuje řezání do dřeva s úmyslem vytvořit něco hezkého, co by zaujalo ostatní. Budu rád, když od Vás dostanu zpětnou vazbu, co se líbí, nelíbí, co zlepšit..k tomu má tento web sloužit. Děkuji všem, ať třísky lítaj, zachovejte mi přízeň.
+					</p>
 				</div>
 				<img src={Lubos} alt="Lubomír Kučera" />
 			</div>
