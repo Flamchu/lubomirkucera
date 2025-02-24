@@ -39,7 +39,7 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ src, alt }) => {
 					}}
 					onClick={toggleFullscreen}
 				>
-					<img src={src} alt={alt} style={{ maxWidth: "90%", maxHeight: "90%" }} />
+					<img src={src} alt={alt} style={{ maxWidth: "90%", maxHeight: "90%", objectFit: "contain" }} />
 				</div>
 			)}
 		</>
