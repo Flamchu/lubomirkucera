@@ -2,10 +2,10 @@ import React from "react";
 import "../scss/components/Footer.scss";
 import { useScrollToTopAndNavigate } from "../hooks/scrollToTopAndNavigate";
 import VisitorCounter from "./VisitorCounter";
+import LikeDislike from "./LikeDislike";
 
 const Footer: React.FC = () => {
 	const scrollToTopAndNavigate = useScrollToTopAndNavigate();
-	const currentYear = new Date().getFullYear(); // Get the current year
 
 	return (
 		<footer className="footer">
@@ -62,14 +62,8 @@ const Footer: React.FC = () => {
 							</li>
 						</ul>
 					</div>
-					<div className="footer__ul-holder">
-						<ul>
-							<li>
-								<p className="footer__copyright">Copyright</p>
-							</li>
-							<p>&copy; {currentYear} Lubomír Kučera</p>
-						</ul>
-					</div>
+
+					<LikeDislike />
 
 					<VisitorCounter />
 				</div>

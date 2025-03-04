@@ -4,28 +4,23 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$count_file = __DIR__ . "/counter.txt";
-$ip_file = __DIR__ . "/ips.txt";
+$data_file = __DIR__ . "/counter_data.json";
 
-if (!file_exists($count_file)) {
-    file_put_contents($count_file, "0");
-}
-if (!file_exists($ip_file)) {
-    file_put_contents($ip_file, "");
+if (!file_exists($data_file)) {
+    $data = ["count" => 0, "ips" => []];
+    file_put_contents($data_file, json_encode($data), LOCK_EX);
+} else {
+    $data = json_decode(file_get_contents($data_file), true);
 }
 
 $ip_address = $_SERVER['REMOTE_ADDR'];
-$stored_ips = file($ip_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-if (!in_array($ip_address, $stored_ips)) {
-    $count = (int) file_get_contents($count_file);
-    $count++;
+if (!in_array($ip_address, $data['ips'])) {
+    $data['count']++;
+    $data['ips'][] = $ip_address;
 
-    file_put_contents($count_file, $count, LOCK_EX);
-    file_put_contents($ip_file, $ip_address . PHP_EOL, FILE_APPEND | LOCK_EX);
-} else {
-    $count = (int) file_get_contents($count_file);
+    file_put_contents($data_file, json_encode($data, JSON_PRETTY_PRINT), LOCK_EX);
 }
 
-echo json_encode(["count" => $count]);
+echo json_encode(["count" => $data['count']]);
 ?>
